@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_activity_background"
+    tools:context=".StartActivity" >
+
+    <ImageView
+        android:id="@+id/progress_image"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/start_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/progress_bar" />
+
+    <TextView
+        
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progress_image"
+        android:layout_alignLeft="@+id/progress_image"
+        android:layout_alignRight="@+id/progress_image"
+        android:layout_alignTop="@+id/progress_image"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/exit_button1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="52dp"
+        android:layout_toRightOf="@+id/start_logo"
+        android:background="@null"
+        android:gravity="center"
+        android:onClick="exitButtonClick"
+        android:scaleType="centerCrop"
+        android:src="@drawable/exit_button"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/like_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="26dp"
+        android:gravity="center"
+        android:onClick="onButtonClick"
+        android:scaleType="centerCrop"
+        android:background="@drawable/button_on"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/off_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="26dp"
+        android:onClick="offButtonClick"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:background="@drawable/button_off"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/start_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="KBM"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:src="@drawable/logo" />
+
+
+</RelativeLayout>
